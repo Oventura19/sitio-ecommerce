@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" integrity="" crossorigin="anonymous">
+</head>
+<body>
+  <!--Navegador-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark pl-5 pr-5 mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">E-commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Canasta</a></li>
+          <li class="nav-item"><button type="button" class="btn btn-outline-light ml-2">Salir</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--contenedor-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="input-group"><input type="search" class="form-control" placeholder="Buscar Camisetas">
+              <div class="input-group-append"><span class="input-group-text"><a href="#" class="text-dark"><i class="fas fa-search"></i></a></span></div>
+            </div>
+          </div>
+        </div>
+        <!--Lista de Categorías-->
+        <div class="row mt-5">
+          <div class="col-lg-12 d-none d-lg-block">
+            <label><strong>Categorías</strong></label>
+            <div class="list-group">
+              <a href="#" class="list-group-item text-dark active">Todos<span class="badge badge-secondary badges mt-1">100</span></a>
+              <a href="#" class="list-group-item text-dark">Hombre<span class="badge badge-secondary badges mt-1">5</span></a>
+              <a href="#" class="list-group-item text-dark">Mujer<span class="badge badge-secondary badges mt-1">4</span></a>
+              <a href="#" class="list-group-item text-dark">Hispter<span class="badge badge-secondary badges mt-1">12</span></a>
+              <a href="#" class="list-group-item text-dark">Metal<span class="badge badge-secondary badges mt-1">24</span></a>
+              <a href="#" class="list-group-item text-dark">Universidad<span class="badge badge-secondary badges mt-1">16</span></a>
+              <a href="#" class="list-group-item text-dark">Deportiva<span class="badge badge-secondary badges mt-1">5</span></a>
+              <a href="#" class="list-group-item text-dark">Rayas<span class="badge badge-secondary badges mt-1">7</span></a>
+              <a href="#" class="list-group-item text-dark">Apretada <span class="badge badge-secondary badges mt-1">9</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Carousel-->
+      <div class="col-md-12 col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img class="d-block w-100" src="img/banner-slider-1.jpg" alt="First slide"></div>
+                  <div class="carousel-item"><img class="d-block w-100" src="img/banner-slider-2.jpg" alt="Second slide"></div>
+                  <div class="carousel-item"><img class="d-block w-100" src="img/banner-slider-3.jpg" alt="Third slide"></div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+            </div>
+          </div>
+        <!--Camisetas-->
+        <div class="row">
+          <div class="col-6 col-md-4 mt-5">
+            <div class="card" style="width: 100%;"><img class="card-img-top" src="img/camiseta-1.jpg" alt="Camiseta 1">
+              <div class="card-body">
+                <h5 class="card-title">Hipster Ultimate</h5><p class="card-text">La camiseta ideal para hipsters.</p>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal1">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mt-5">
+            <div class="card" style="width: 100%;"><img class="card-img-top" src="img/camiseta-2.jpg" alt="Camiseta 2">
+              <div class="card-body">
+                <h5 class="card-title">On Motion Live</h5><p class="card-text">Perfecta para salidas rocosas.</p>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal2">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mt-5">
+            <div class="card" style="width: 100%;"><img class="card-img-top" src="img/camiseta-3.jpg" alt="Camiseta 3">
+              <div class="card-body">
+                <h5 class="card-title">Undergorund Max</h5><p class="card-text">Para los amantes del undergorund.</p>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal3">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mt-5">
+            <div class="card" style="width: 100%;"><img class="card-img-top" src="img/camiseta-4.jpg" alt="Camiseta 4">
+              <div class="card-body">
+                <h5 class="card-title">Fenix Ultimate</h5><p class="card-text">Vuela con tu imaginación.</p>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal4">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mt-5">
+            <div class="card" style="width: 100%;"><img class="card-img-top" src="img/camiseta-5.jpg" alt="Camiseta 5">
+              <div class="card-body">
+                <h5 class="card-title">Fire Ultimate</h5><p class="card-text">Ponle fuego a tu pasión.</p>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal5">Detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Detalle Camiseta 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hipster Ultimate</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="alert alert-primary" role="alert"><i class="fas fa-info-circle"></i> Este producto esta agotado</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6"><img src="img/camiseta-1.jpg" alt="camiseta-1" class="img-thumbnail"></div>
+                  <div class="col-6">
+                    <p>Precio: <strong>299</strong></p>
+                    <p>Calificacion: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                    <span class="badge badge-warning">Hipster</span>
+                    <span class="badge badge-secondary">Deportiva</span>
+                    <a href="#" class="d-block pt-3"><i class="fas fa-heart"></i> Agregar a los deseos</a>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12">
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Descripción</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Comentarios</a>
+                      </div>
+                    </nav>
+                    <div class="tab-content pt-2" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit blandit ac lacus, nostra odio pulvinar lectus erat himenaeos pharetra cubilia pretium iaculis. Viverra egestas suscipit porta massa, vel cras ultricies.
+                      </div>
+                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="card"><p class="card-header">Oscar Ventura comentó hace dos días</p>
+                          <div class="card-body"><p class="card-text">Esta camiseta está increible, ¡La Quiero!.</p></div>
+                        </div>
+                        <form>
+                          <div class="form-group pt-3"><textarea class="form-control" rows="3" placeholder="Ingresa tu comentario"></textarea></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+</body>
+</html>
